@@ -34,4 +34,3 @@ for index, folder in enumerate(folder_paths):
 		shutil.copytree(folder, 'posts\\' + folder_names[index])
 	except:
 		print('Folder already copied.')
-
