@@ -6,9 +6,14 @@ import codecs
 path = "posts/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/index.html"
 
 f = codecs.open(path, 'r')
-file = f.read()
+html = f.read()
 
-md = Tomd(file).markdown
+soup = BeautifulSoup(html, features="html5lib")
+
+title = "# " + soup.find("h1").get_text().strip()
+
+content = soup.find(itemprop="articleBody")
+md = Tomd(str(content)).markdown
 
 with open('test.md', 'w') as file:
-    file.write(md)
+    file.write(title + "\n" + md)

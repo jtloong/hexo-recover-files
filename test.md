@@ -1,39 +1,4 @@
-
-         
-          - [Home](/)
-         
-          - [About](/about/)
-         
-          - [Now](/now/)
-         
-          - [Reading](/reading/)
-         
-          - [Writing](/archives/)
-        
-      
-        
-        - [<i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$("#i-prev").toggle();" onmouseout="$("#i-prev").toggle();"></i>](/2018/02/07/Using-Civic-Tech-to-Combat-the-Homelessness-Crisis-in-Toronto/)
-        
-        
-        - [<i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$("#i-next").toggle();" onmouseout="$("#i-next").toggle();"></i>](/2018/01/21/Digital-Marketing-in-the-Public-Policy-Space/)
-        
-        - [<i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$("#i-top").toggle();" onmouseout="$("#i-top").toggle();"></i>](#)
-        - [<i class="fa fa-share-alt" aria-hidden="true" onmouseover="$("#i-share").toggle();" onmouseout="$("#i-share").toggle();" onclick="$("#share").toggle();return false;"></i>](#)
-      
-  - [<i class="fa fa-facebook " aria-hidden="true"></i>](http://www.facebook.com/sharer.php?u=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/)
-  - [<i class="fa fa-twitter " aria-hidden="true"></i>](https://twitter.com/share?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&text=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-linkedin " aria-hidden="true"></i>](http://www.linkedin.com/shareArticle?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-pinterest " aria-hidden="true"></i>](https://pinterest.com/pin/create/bookmarklet/?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&is_video=false&description=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-envelope " aria-hidden="true"></i>](mailto:?subject=Applying the Bradford Hill Criteria to Economics and Policy&body=Check out this article: http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/)
-  - [<i class="fa fa-get-pocket " aria-hidden="true"></i>](https://getpocket.com/save?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-reddit " aria-hidden="true"></i>](http://reddit.com/submit?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-stumbleupon " aria-hidden="true"></i>](http://www.stumbleupon.com/submit?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-digg " aria-hidden="true"></i>](http://digg.com/submit?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-tumblr " aria-hidden="true"></i>](http://www.tumblr.com/share/link?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&name=Applying the Bradford Hill Criteria to Economics and Policy&description=)
-1. [1. Society is messy](#Society-is-messy)1. [2. But we can do better](#But-we-can-do-better)1. [3. A set of principles](#A-set-of-principles)
-# 
-        Applying the Bradford Hill Criteria to Economics and Policy
-    
+# Applying the Bradford Hill Criteria to Economics and Policy
 
 Sir Austin Bradford Hill was an English epidemiologist and statistician, who after pursuing an economics degree at London University, became involved with studying the field of public health. He is most famous for pioneering the randomized clinical trial, but the focus of my blog post will be on his contribution that is less known outside of epidemiology and statistics: the Bradford Hill Criteria.
 
@@ -91,44 +56,3 @@ So with this whole discussion, I figured I’d take a stab at trying to apply th
 These are just things I’ve been pondering. This is not by any means a definitive adaptation of the criteria to the world of policy/economics. I just have been thinking about this a lot and wanted to start that conversation.
 
 As a Canadian, our civil service has done a much better job than most other countries but there’s always ways to improve. I think this is a huge area where the government can advance in. We just need to just need to take that first step.
-
-         
-          - [Home](/)
-         
-          - [About](/about/)
-         
-          - [Now](/now/)
-         
-          - [Reading](/reading/)
-         
-          - [Writing](/archives/)
-        
-      1. [1. Society is messy](#Society-is-messy)1. [2. But we can do better](#But-we-can-do-better)1. [3. A set of principles](#A-set-of-principles)
-  - [<i class="fa fa-facebook fa-lg" aria-hidden="true"></i>](http://www.facebook.com/sharer.php?u=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/)
-  - [<i class="fa fa-twitter fa-lg" aria-hidden="true"></i>](https://twitter.com/share?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&text=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-linkedin fa-lg" aria-hidden="true"></i>](http://www.linkedin.com/shareArticle?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-pinterest fa-lg" aria-hidden="true"></i>](https://pinterest.com/pin/create/bookmarklet/?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&is_video=false&description=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-envelope fa-lg" aria-hidden="true"></i>](mailto:?subject=Applying the Bradford Hill Criteria to Economics and Policy&body=Check out this article: http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/)
-  - [<i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i>](https://getpocket.com/save?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-reddit fa-lg" aria-hidden="true"></i>](http://reddit.com/submit?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i>](http://www.stumbleupon.com/submit?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-digg fa-lg" aria-hidden="true"></i>](http://digg.com/submit?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&title=Applying the Bradford Hill Criteria to Economics and Policy)
-  - [<i class="fa fa-tumblr fa-lg" aria-hidden="true"></i>](http://www.tumblr.com/share/link?url=http://jtloong.github.io/2018/01/25/Applying-the-Bradford-Hill-Criteria-to-Economics-and-Policy/&name=Applying the Bradford Hill Criteria to Economics and Policy&description=)
-
-        - [<i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC](#)
-        - [<i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share](#)
-        - [<i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top](#)
-        - [<i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu](#)
-      
-         
-          - [Home](/)
-         
-          - [About](/about/)
-         
-          - [Now](/now/)
-         
-          - [Reading](/reading/)
-         
-          - [Writing](/archives/)
-        
-      
