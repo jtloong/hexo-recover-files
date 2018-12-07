@@ -1,5 +1,6 @@
 import os
 import shutil
+import convert_html
 from bs4 import BeautifulSoup
 
 
@@ -24,7 +25,9 @@ year_folders = [item for item in os.listdir("website/") if item[:2] == '20']
 
 # Traverse directories two levels down
 folder_paths, folder_names  = get_post_folders(year_folders)
-print(folder_paths)
+
+if os.path.exists('posts\\'):
+	shutil.rmtree("posts\\")
 
 if not os.path.exists('posts\\'):
 	os.mkdir('posts\\')
@@ -34,3 +37,11 @@ for index, folder in enumerate(folder_paths):
 		shutil.copytree(folder, 'posts\\' + folder_names[index])
 	except:
 		print('Folder already copied.')
+
+for post in folder_names:
+	try:
+		convert_html.build_file(post)
+		print("Built " + post)
+		os.remove("posts/" + post + "/index.html")
+	except:
+		print("No file")
