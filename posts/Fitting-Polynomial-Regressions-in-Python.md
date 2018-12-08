@@ -38,8 +38,16 @@ But it also comes with a series of mathematical functions to play around with da
 What polyfit does is, given an independant and dependant variable (x &amp; y) and a degree of polynomial, it applies a least-squares estimation to fit a curve to the data.
 
 Here’s a demonstration of creating a cubic model (a degree 3 polynomial):
-<td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/></pre></td><td class="code"><pre>import numpy as np<br/>x = np.array([0.0, 1.0, 2.0, 3.0,  4.0,  5.0])<br/>y = np.array([0.0, 0.8, 0.9, 0.1, -0.8, -1.0])<br/>degree = 3<br/>weights = np.polyfit(x, y, degree)<br/><br/>model = np.poly1d(weights)<br/></pre></td>
 
+``` python
+import numpy as np
+x = np.array([0.0, 1.0, 2.0, 3.0,  4.0,  5.0])
+y = np.array([0.0, 0.8, 0.9, 0.1, -0.8, -1.0])
+degree = 3
+weights = np.polyfit(x, y, degree)
+
+model = np.poly1d(weights)
+```
 With this above example, you can then give `model` an array of x-values to get predicted results.
 
 This is simply a redemonstration of what you can find in the Numpy documentation. But what they don’t help you with, either in the documentation or what I could find online, was a guide for model evaluation and significance testing for these regressions.
@@ -57,15 +65,35 @@ That is until I found this great, and not very well known, function: [from_formu
 What you can essentially do is specify the model formula beforehand instead of using the traditional linear OLS regression equation.
 
 According to the documentation this formula can take the form of string descriptions. Most of the examples online looked like this:
-<td class="gutter"><pre>1<br/>2<br/>3<br/></pre></td><td class="code"><pre>import statsmodels.formula.api as smf<br/><br/>model = smf.ols(formula='Lottery ~ Literacy + Wealth + Region', data=df)<br/></pre></td>
 
+``` python
+import statsmodels.formula.api as smf
+
+model = smf.ols(formula='Lottery ~ Literacy + Wealth + Region', data=df)
+```
 Where you specify the model by using the column names of your pandas dataframe.
 
 But what you can also do, and that was relevant to the work I was doing, is pass to statsmodels a generic equation object which is exactly what we generated in the Numpy example earlier.
 
 Here’s a demonstration bringing it all together:<br/>
-<td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/>8<br/>9<br/>10<br/>11<br/>12<br/>13<br/>14<br/>15<br/></pre></td><td class="code"><pre>import statsmodels.formula.api as smf<br/>import numpy as np<br/>import pandas as pd<br/><br/>x = np.array([0.0, 1.0, 2.0, 3.0,  4.0,  5.0])<br/>y = np.array([0.0, 0.8, 0.9, 0.1, -0.8, -1.0])<br/>degree = 3<br/><br/>df = pd.DataFrame(columns=['y', 'x'])<br/>df['x'] = x<br/>df['y'] = y<br/><br/>weights = np.polyfit(x, y, degree)<br/>model = np.poly1d(weights)<br/>results = smf.ols(formula='y ~ model(x)', data=df).fit()<br/></pre></td>
 
+``` python
+import statsmodels.formula.api as smf
+import numpy as np
+import pandas as pd
+
+x = np.array([0.0, 1.0, 2.0, 3.0,  4.0,  5.0])
+y = np.array([0.0, 0.8, 0.9, 0.1, -0.8, -1.0])
+degree = 3
+
+df = pd.DataFrame(columns=['y', 'x'])
+df['x'] = x
+df['y'] = y
+
+weights = np.polyfit(x, y, degree)
+model = np.poly1d(weights)
+results = smf.ols(formula='y ~ model(x)', data=df).fit()
+```
 
 
 This `results` variable is now a statsmodels object, fitted against the model function you declared the line before, and gives you full access to all the great capabilities that the library can provide.

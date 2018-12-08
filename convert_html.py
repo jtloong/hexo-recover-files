@@ -2,7 +2,12 @@ import os
 from tomd import Tomd
 from bs4 import BeautifulSoup
 import codecs
+import re
 
+def cleanhtml(raw_html):
+  cleanr = re.compile('<.*?>')
+  cleantext = re.sub(cleanr, '', raw_html)
+  return cleantext
 
 def build_file(name):
 	path = "posts/" + name + "/index.html"
@@ -31,8 +36,32 @@ def build_file(name):
 			md += "\n" + num_pounds + " " + child.get_text() + "\n"
 		elif str(child)[:3] == '<if':
 			md += "\n" + str(child) + "\n"
+		elif str(child)[:24] == '<figure class="highlight':
+			code_sample = str(child)
+
+			code_type = code_sample[25: code_sample.find('"', 24)]
+
+			temp_md = Tomd(str(child)).markdown
+			temp_md = temp_md[temp_md.find('<td class="code"'):]
+			temp_md = BeautifulSoup(temp_md, features="html5lib").find("pre")
+
+			pre_md = str(temp_md)
+			pre_md = pre_md[5:-6]
+			
+			temp_md = "\n``` "
+			temp_md += code_type + '\n'
+			for i, char in enumerate(pre_md):
+				if pre_md[i:i+5] == '<br/>':
+					temp_md += '\n'
+					temp_md += char
+				else:
+					temp_md += char
+			temp_md += '```' 
+
+			md += temp_md.replace('<br/>', '')
 		else:
 			md += Tomd(str(child)).markdown
 
+	print(md)
 	with open('posts/' + name + '.md', 'w') as file:
 	    file.write(md)
