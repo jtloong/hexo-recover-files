@@ -66,8 +66,10 @@ And voila! You should have a version of Open EdX devstack running on your local 
 |Studio/CMS|[http://localhost:18010/](http://localhost:18010/)
 
 Once you’re done with working for the day you can stop the services using:<br/>
-<td class="gutter"><pre>1<br/></pre></td><td class="code"><pre>make stop<br/></pre></td>
 
+``` plain
+make stop
+```
 
 
 ## Actually Developing

@@ -41,20 +41,28 @@ And more. For this reason, sometimes data can be better modeled with two or more
 The repository for the module is [here](https://github.com/jtloong/chow-test).
 
 I had never built a Python module or package before so I followed [this tutorial](https://python-packaging.readthedocs.io/en/latest/minimal.html) and some others loosely. You can install it by following these instructions:<br/>
-<td class="gutter"><pre>1<br/>2<br/>3<br/></pre></td><td class="code"><pre>git clone https://github.com/jtloong/chow-test.git<br/>cd chow-test<br/>pip install .<br/></pre></td>
 
+``` zsh
+git clone https://github.com/jtloong/chow-test.git
+cd chow-test
+pip install .
+```
 
 
 And in the code where you’re using it just import like so:<br/>
-<td class="gutter"><pre>1<br/></pre></td><td class="code"><pre>import chow_test<br/></pre></td>
 
+``` python
+import chow_test
+```
 
 
 It was relatively easy to build. It has three dependencies: pandas, numpy and sklearn. Pandas is for handling the data, numpy to perform quick functions across the data, and sklearn to perform the linear regressions. The current version only works with simple linear models with a single x-variable, that have a time-axis in years as integers, and when finding breaks where k = 2.
 
 The function itself has five parameters:<br/>
-<td class="gutter"><pre>1<br/></pre></td><td class="code"><pre>chow_test.calculate(Year, data, timeColumn, x_column, y_column)<br/></pre></td>
 
+``` python
+chow_test.calculate(Year, data, timeColumn, x_column, y_column)
+```
 
 
 Where the parameter requirements are:
@@ -68,18 +76,35 @@ Where the parameter requirements are:
 |y_column|A string of y-variable column name
 
 When called, the data is handled like so:<br/>
-<td class="gutter"><pre>1<br/>2<br/>3<br/></pre></td><td class="code"><pre>rss_total = find_rss(data, x_column, y_column)<br/>rss_1 = find_rss(data[data[timeColumn] &lt; break_point], x_column, y_column)<br/>rss_2 = find_rss(data[data[timeColumn] &gt; (break_point - 1)], x_column, y_column)<br/></pre></td>
 
+``` python
+rss_total = find_rss(data, x_column, y_column)
+rss_1 = find_rss(data[data[timeColumn] &lt; break_point], x_column, y_column)
+rss_2 = find_rss(data[data[timeColumn] &gt; (break_point - 1)], x_column, y_column)
+```
 
 
 The calculate function then has a subfunction called find_rss, which outputs the residual sum of squares for each regression line t like so:<br/>
-<td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/>5<br/>6<br/>7<br/></pre></td><td class="code"><pre>def find_rss (data, x_column, y_column):<br/>        x = data[[x_column]]<br/>        y = data[y_column]<br/>        lm = LinearRegression()<br/>        lm.fit(x, y)<br/>        rss = np.sum(np.square(y - lm.predict(x)))<br/>        return rss<br/></pre></td>
 
+``` python
+def find_rss (data, x_column, y_column):
+        x = data[[x_column]]
+        y = data[y_column]
+        lm = LinearRegression()
+        lm.fit(x, y)
+        rss = np.sum(np.square(y - lm.predict(x)))
+        return rss
+```
 
 
 Given these residual sum of square values we can then use the Chow test formula to compute the f-value:<br/>
-<td class="gutter"><pre>1<br/>2<br/>3<br/>4<br/></pre></td><td class="code"><pre>chow_nom = (rss_total - (rss_1 + rss_2)) / 2<br/>chow_denom = (rss_1+rss_2) / (n_1 + n_2 - (2 *2))<br/>chow = chow_nom / chow_denom<br/>return chow<br/></pre></td>
 
+``` python
+chow_nom = (rss_total - (rss_1 + rss_2)) / 2
+chow_denom = (rss_1+rss_2) / (n_1 + n_2 - (2 *2))
+chow = chow_nom / chow_denom
+return chow
+```
 
 
 With all this handled in the background and packaged up like this, you can then import and use it in your code!
