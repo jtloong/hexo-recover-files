@@ -4,11 +4,6 @@ from bs4 import BeautifulSoup
 import codecs
 import re
 
-def cleanhtml(raw_html):
-  cleanr = re.compile('<.*?>')
-  cleantext = re.sub(cleanr, '', raw_html)
-  return cleantext
-
 def build_file(name):
 	path = "posts/" + name + "/index.html"
 
