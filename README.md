@@ -26,9 +26,13 @@ This project can rebuild the following features:
 	pip install -r requirements.txt
 	```
 
-2. Clone your static website repo with your compiled files and rename it to `website`
+2. Clone your static website repo with your compiled files
 
-3. Run `python extract.py`
+3. Edit the `locations.json` file with the folder locations of your static repo:
+	* Change `static_folder` value to the name of your repo
+	* Change `post_folder` array to the locations of your post folders
+
+4. Run `python extract.py`
 
 The extraction script will build a `posts/` directory with all of your pre-compiled markdown files and their assets.
 
