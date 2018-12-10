@@ -1,9 +1,10 @@
+---
 title: Getting Started With Local Open edX Development
 date: 2018/03/22
 tags: software-development
 ---
 
-{% classroom.jpg %}
+{% asset_img classroom.jpg %}
 
 The world of online learning is vast. There are a myriad of options available for the prospective client wishing to distribute training/education. Many of them paid, some of them free, all of them have their strengths and weaknesses.
 

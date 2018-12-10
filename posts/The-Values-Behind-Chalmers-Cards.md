@@ -1,9 +1,10 @@
+---
 title: The Values Behind Chalmers Cards
 date: 2018/03/01
 tags: civic-action
 ---
 
-{% designs.jpg %}
+{% asset_img designs.jpg %}
 
 So we’ve been working away at Chalmers Cards. Thanks for all the wonderful feedback and support people have been sending on social media. We really appreciate it 😊
 

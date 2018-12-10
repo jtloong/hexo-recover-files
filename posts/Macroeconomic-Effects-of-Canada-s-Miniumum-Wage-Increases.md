@@ -1,3 +1,4 @@
+---
 title: Macroeconomic Effects of Canada's Minimum Wage Increases
 date: 2018/01/03
 tags: economics

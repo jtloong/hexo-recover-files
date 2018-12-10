@@ -1,9 +1,10 @@
+---
 title: Digital Marketing in the Public Policy Space
 date: 2018/01/21
 tags: public-policy
 ---
 
-{% leg-ON.jpg %}
+{% asset_img leg-ON.jpg %}
 
 In the previous dark ages of marketing and advertising we had very few sources of performance info. Two of the most prominent of these were: focus groups/surveys and GRP’s. And for those of you in the industry know, taking these as your only sources of data can be highly problematic for a variety of reasons (although they are very good for specific purposes). And while this isn’t a rant about the merits and pitfalls of GRP’s, it’s always nice to reflect on how far we’ve come in comparison to the modern digital marketing era.
 

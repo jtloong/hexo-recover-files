@@ -1,9 +1,10 @@
+---
 title: Improving My Hexo Blogging Workflow
 date: 2018/07/30
 tags: software-development
 ---
 
-{% hexo.png %}
+{% asset_img hexo.png %}
 
 [Hexo](https://hexo.io/) is a simple static site web framework built using Node.js (similar to other famous blogging frameworks such as Jekyll and Hugo). I’ve been using it for this blog and I’ve really liked using it.
 

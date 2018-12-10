@@ -1,9 +1,10 @@
+---
 title: Ontario Municipal per Capita Transit Spending
 date: 2018/03/27
 tags: public-policy
 ---
 
-{% yrt.JPG %}
+{% asset_img yrt.JPG %}
 
 Municipal transit is a hot button issue these days, especially in Toronto and the GTHA. With issues surrounding funding and expansion being especially pertinent, I’ve always wondered: is there a better way to sell both governments and other taxpayers on **the idea of transit**.
 
@@ -21,7 +22,7 @@ But the other day, one of the Budgetpedia members posted on the [Civic Tech Toro
 
 This came with a great graphic which can be seen below:
 
-{% chart.png %}
+{% asset_img chart.png %}
 
 It’s a bit hard to see here, but in essence it is a bar graph of the total transit operating budgets of all the municipalities in Ontario with a transit system.
 

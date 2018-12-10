@@ -1,9 +1,10 @@
+---
 title: Custom Git Commands: Making Git-Status-Size
 date: 2018/10/22
 tags: software-development
 ---
 
-{% example.gif %}
+{% asset_img example.gif %}
 
 Sometimes you find a task that seriously disrupts your workflow and so you have to make something to fix it.
 

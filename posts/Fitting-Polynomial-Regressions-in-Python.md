@@ -1,9 +1,10 @@
+---
 title: Fitting Polynomial Regressions in Python
 date: 2018/10/03
 tags: data-science
 ---
 
-{% example.png %}
+{% asset_img example.png %}
 
 The linear regression is one of the first things you do in machine learning. It’s simple, elegant, and can be extremely useful for a variety of problems.
 
@@ -100,7 +101,7 @@ This `results` variable is now a statsmodels object, fitted against the model fu
 
 This includes things like `results.summary()` which can give a fill regression summary like below:
 
-{% statsmodel_summary.png %}
+{% asset_img statsmodel_summary.png %}
 
 It also gives you things like p-values, R-squared, coefficients, standard error, and tons of other info to help you test whether or not your model is performing well or not. This was a huge revelation for me and I just wanted to share.
 

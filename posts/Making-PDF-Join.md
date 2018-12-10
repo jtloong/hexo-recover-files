@@ -1,9 +1,10 @@
+---
 title: Making PDF-Join
 date: 2017/12/22
 tags: software-development
 ---
 
-{% pdf-join.png %}
+{% asset_img pdf-join.png %}
 
 My first **real** foray into programming was building web sites and applications for the Ministry of Advanced Education and Skills Development. Before that I had dabbled in VB/VBA scripts/macros and done a few course in Java programming in high school, but I had never truly committed to the art of programming. Building things for the web really opened my eyes to how much fun coding could  be.
 

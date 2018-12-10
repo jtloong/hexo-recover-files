@@ -1,9 +1,10 @@
+---
 title: Using Civic Tech to Combat the Homelessness Crisis in Toronto
 date: 2018/02/07
 tags: civic-action
 ---
 
-{% homeless.jpeg %}
+{% asset_img homeless.jpeg %}
 
 Homelessness in this city, and really in most cities, has often been categorized as an unsolvable, ongoing crisis. Everyone knows its an issue, but it seems to me like we’ve never been even close to solving it.
 
@@ -45,7 +46,7 @@ And it’s this creative use of technology that influenced the way we’re tryin
 
 ## Chalmers Cards
 
-{% cards.jpg %}
+{% asset_img cards.jpg %}
 
 Chalmers Cards is a guerrilla street project that aims to distribute information resources to the thousands of people living in unstable housing conditions. Many of people living in these circumstances are often not very tech literate, and so they may not be aware of the countless public and nonprofit resources that are available to them.
 

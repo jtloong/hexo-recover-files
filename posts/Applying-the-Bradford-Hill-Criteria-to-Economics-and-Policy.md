@@ -1,9 +1,10 @@
+---
 title: Applying the Bradford Hill Criteria to Economics and Policy
 date: 2018/01/25
 tags: public-policy
 ---
 
-{% Austin_Bradford_Hill.jpg %}
+{% asset_img Austin_Bradford_Hill.jpg %}
 
 Sir Austin Bradford Hill was an English epidemiologist and statistician, who after pursuing an economics degree at London University, became involved with studying the field of public health. He is most famous for pioneering the randomized clinical trial, but the focus of my blog post will be on his contribution that is less known outside of epidemiology and statistics: the Bradford Hill Criteria.
 
@@ -11,7 +12,7 @@ The Bradford Hill Criteria are a set of principles to establish the relationship
 
 These principles can be summarized in the following chart:
 
-{% bradford-hill-criteria.jpg %}
+{% asset_img bradford-hill-criteria.jpg %}
 
 These criteria mostly talk about ways of demonstrating plausibility of causes, measuring its strength, its consistency, appealing to experimental data, corroborating evidence etc. And while there’s plenty of debate about the ways in which researchers apply these criteria to prove causal relationships, it really forms the basis of the way we sudy health.
 

@@ -1,3 +1,4 @@
+---
 title: Review: The Nordic Model
 date: 2017/11/27
 tags: book-review
@@ -25,7 +26,7 @@ As a bit of a data nerd, I wanted to try to attempt to have this disucssion usin
 
 ## An Example of Scandanavia in a Chart
 
-{% union-rates.png %}
+{% asset_img union-rates.png %}
 
 This graph shows union density across different Scandanavian and other countries such as Canada, the US, and Japan.
 
