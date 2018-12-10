@@ -24,7 +24,7 @@ def build_file(name):
 		if str(child)[:4] == '<img':
 			end_point = child['src'].rfind('/') + 1
 			file_name = child['src'][end_point:]
-			text = "{% " + file_name + " %}"
+			text = "{% asset_img " + file_name + " %}"
 			md += "\n" + text + "\n"
 		elif str(child)[:2] == '<h':
 			num_pounds = "#" * int(str(child)[2])
