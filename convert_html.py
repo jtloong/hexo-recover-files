@@ -13,7 +13,8 @@ def build_file(name):
 	soup = BeautifulSoup(html, features="html5lib")
 
 	# Save title
-	md = "title: " + soup.find("h1").get_text().strip()
+	md = "---"
+	md += "\ntitle: " + soup.find("h1").get_text().strip()
 	md += "\ndate: " +  soup.find("time").get_text().replace("-", "/")
 	md += "\ntags: " + soup.find("a", "tag-link").get_text()
 	md += "\n---\n"
