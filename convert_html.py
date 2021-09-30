@@ -60,3 +60,4 @@ def build_file(name):
 
 	with open('posts/' + name + '.md', 'w') as file:
 	    file.write(md)
+print("hi")
